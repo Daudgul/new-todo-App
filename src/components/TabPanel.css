@@ -1,0 +1,19 @@
+.enter {
+  display: flex;
+  flex: 1;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: right;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+.tab-container {
+  /* background-color: white; */
+  font-size: 50px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+.return-data {
+  font-size: medium;
+}
