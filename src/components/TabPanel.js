@@ -70,7 +70,7 @@ export const TabPanel = ({ data, setData, deleteItem, editItem }) => {
         <Tab
           sx={{
             textTransform: "capitalize",
-            color: "#b9864e",
+            color: "#498590",
             fontSize: "17px",
           }}
           theme={theme}
@@ -80,7 +80,7 @@ export const TabPanel = ({ data, setData, deleteItem, editItem }) => {
         <Tab
           sx={{
             textTransform: "capitalize",
-            color: "#b9864e",
+            color: "#498590",
             fontSize: "17px",
           }}
           theme={theme}
@@ -89,7 +89,7 @@ export const TabPanel = ({ data, setData, deleteItem, editItem }) => {
         <Tab
           sx={{
             textTransform: "capitalize",
-            color: "#b9864e",
+            color: "#498590",
             fontSize: "17px",
           }}
           theme={theme}

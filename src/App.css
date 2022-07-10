@@ -162,10 +162,18 @@
   display: flex;
   align-items: center;
 }
+.todo {
+  text-transform: capitalize;
+  color: #1b5e47;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 2px 0;
+  letter-spacing: 0.5px;
+}
 
 .completed {
   text-decoration: line-through;
-  opacity: 0.5;
+  color: #498590;
 }
 
 ::placeholder {

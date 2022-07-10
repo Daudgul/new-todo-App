@@ -24,7 +24,7 @@
 }
 
 .header {
-  background: rgb(67, 38, 181);
+  background: #1b5e47;
   padding: 1rem;
 }
 
@@ -53,8 +53,9 @@
 /* <--////////////////////////--> */
 .button {
   font: inherit;
-  border: 1px solid rgb(67, 38, 181);
-  background: rgb(67, 38, 181);
+  border: 1px solid #0e215a;
+  background: #3da480;
+  border-radius: 3px;
   color: white;
   padding: 0.25rem 1rem;
   cursor: pointer;
@@ -62,7 +63,7 @@
 
 .button:hover,
 .button:active {
-  background: #0e215a;
+  background: #1b5e47;
   border-color: #0e215a;
 }
 
