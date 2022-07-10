@@ -6,14 +6,19 @@
   justify-content: right;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
+  font-size: 35px;
 }
 
-.tab-container {
-  /* background-color: white; */
-  font-size: 50px;
-  border-radius: 6px;
-  margin-bottom: 4px;
-}
 .return-data {
   font-size: medium;
+}
+.tab-item {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 580px) {
+  .enter {
+    /* color: transparent; */
+    display: none;
+  }
 }

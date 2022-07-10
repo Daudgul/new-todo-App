@@ -6,19 +6,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import IconCheckboxes from "./Checkbox";
 import Tooltip from "@mui/material/Tooltip";
 import "./TabPanel.css";
-import { grey } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
-// import { makeStyles } from "@mui/material";
-
-// const useStyles = makeStyles({
-//   btn: {
-//     fontSize: 60,
-//     backgroundColor: " #fff",
-//     "&:hover": {
-//       backgroundColor: "red",
-//     },
-//   },
-// });
 
 const theme = createTheme({
   palette: {
@@ -33,8 +21,6 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: "Franklin Gothic Medium",
-    fontWeightBold: 700,
-    fontSize: 20,
   },
 });
 
@@ -50,10 +36,10 @@ export const TabPanel = ({ data, setData, deleteItem, editItem }) => {
   const filterHandler = () => {
     switch (value) {
       case 2:
-        setFilterTodo(data.filter((todo) => todo.completed === true));
+        setFilterTodo(data.filter((todo) => todo.completed === false));
         break;
       case 1:
-        setFilterTodo(data.filter((todo) => todo.completed === false));
+        setFilterTodo(data.filter((todo) => todo.completed === true));
         break;
       case 0:
         setFilterTodo(data);
@@ -67,11 +53,49 @@ export const TabPanel = ({ data, setData, deleteItem, editItem }) => {
 
   return (
     <>
-      <Tabs className="tab-container" value={value} onChange={handelTabs}>
-        <Tab theme={theme} label="All"></Tab>
-        <Tab theme={theme} label="Uncompleted"></Tab>
-        <Tab theme={theme} label="Completed"></Tab>
-        <h5 className="enter">Believable</h5>
+      <Tabs
+        sx={{
+          bgcolor: "#1b5e47",
+          borderRadius: "8px",
+          textTransform: "capitalize",
+        }}
+        sm={{
+          bgcolor: "#fff",
+          fontWeightBold: 700,
+          fontSize: 20,
+        }}
+        value={value}
+        onChange={handelTabs}
+      >
+        <Tab
+          sx={{
+            textTransform: "capitalize",
+            color: "#b9864e",
+            fontSize: "17px",
+          }}
+          theme={theme}
+          className="tab-item"
+          label="All"
+        ></Tab>
+        <Tab
+          sx={{
+            textTransform: "capitalize",
+            color: "#b9864e",
+            fontSize: "17px",
+          }}
+          theme={theme}
+          label="Completed"
+        ></Tab>
+        <Tab
+          sx={{
+            textTransform: "capitalize",
+            color: "#b9864e",
+            fontSize: "17px",
+          }}
+          theme={theme}
+          label="UnCompleted"
+        ></Tab>
+        <h5 className="enter">Make Your List</h5>
       </Tabs>
       <hr
         style={{
@@ -80,6 +104,7 @@ export const TabPanel = ({ data, setData, deleteItem, editItem }) => {
           border: "none",
           borderRadius: "10%",
           marginBottom: "1rem",
+          marginTop: "0.3rem",
         }}
       ></hr>
 
